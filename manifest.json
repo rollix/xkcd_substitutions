@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "xkcd Substitutions",
+  "version": "1.2",
+   
+  "background": {
+    "page":"html/substitutions.html"
+  },
+
+  "description": "Replaces text on any website according to https://xkcd.com/1288/",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["js/substitutions.js"]
+    }
+  ]
+
+}
